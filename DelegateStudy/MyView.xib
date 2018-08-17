@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyView" customModule="DelegateStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgp-oU-XJl">
+                    <rect key="frame" x="79" y="89.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNG-AL-VdF">
+                    <rect key="frame" x="83" y="118.5" width="35" height="30"/>
+                    <state key="normal" title="Ação"/>
+                    <connections>
+                        <action selector="didTapActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="uNf-N4-pVS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rNG-AL-VdF" firstAttribute="top" secondItem="xgp-oU-XJl" secondAttribute="bottom" constant="8" id="Fdm-hB-Wv8"/>
+                <constraint firstItem="rNG-AL-VdF" firstAttribute="centerX" secondItem="xgp-oU-XJl" secondAttribute="centerX" id="LyH-8d-nHS"/>
+                <constraint firstItem="xgp-oU-XJl" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="OZe-wc-bsK"/>
+                <constraint firstItem="xgp-oU-XJl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xcD-xY-wOE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="actionButton" destination="rNG-AL-VdF" id="HlJ-3Q-dX7"/>
+                <outlet property="mainLabel" destination="xgp-oU-XJl" id="DrW-Ao-vDC"/>
+            </connections>
+        </view>
+    </objects>
+</document>
